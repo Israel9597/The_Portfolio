@@ -20,6 +20,7 @@ import emailjs from "@emailjs/browser";
 import { MdPermPhoneMsg } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { ImLocation } from "react-icons/im";
+import { IoLogoGithub } from "react-icons/io";
 import "./contact.css";
 import { motion } from "framer-motion";
 
@@ -55,16 +56,11 @@ const Contact = () => {
             position: "top-right",
             isClosable: true,
           });
-          console.log(e.text);
         });
   };
 
   return (
-    <Container
-      maxW="100%"
-      bgGradient="linear(to-l, rgb(0, 0, 0), rgb(30, 3, 63))"
-      centerContent
-    >
+    <Container maxW="100%" centerContent>
       <MotionBox
         className="flex items-center justify-center text-white w-[200px] h-[200px] rounded-full bg-black"
         animate={{ y: 20 }}
@@ -147,6 +143,12 @@ const Contact = () => {
               isExternal
             >
               <Text fontSize={{ base: "10px", lg: "18px" }}>Israel Haile</Text>
+            </Link>
+          </HStack>
+          <HStack mb="10">
+            <IoLogoGithub size={30} />
+            <Link href="https://github.com/Israel9597" isExternal>
+              <Text fontSize={{ base: "10px", lg: "18px" }}>My Github</Text>
             </Link>
           </HStack>
           <HStack>

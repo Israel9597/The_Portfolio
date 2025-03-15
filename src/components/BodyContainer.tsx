@@ -45,8 +45,7 @@ const BodyContainer = () => {
           top="1" // Stick to the top of the viewport
           zIndex="1"
           h="80px"
-          opacity="0.9"
-          bg="gray.700"
+          bg="black"
         >
           <NavBar />
         </Box>

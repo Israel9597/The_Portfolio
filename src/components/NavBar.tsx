@@ -18,12 +18,12 @@ const NavBar = () => {
         spacing="80px"
         p={5}
         mr="150px"
-        color="whiteAlpha.800"
+        color="whiteAlpha"
       >
         <Link to="home" smooth={true} duration={1200}>
           <HStack cursor="pointer">
             <IoIosHome size={30} />
-            <Text fontWeight="40" fontSize="xl">
+            <Text fontWeight="200" fontSize="xl">
               Home
             </Text>
           </HStack>
@@ -31,7 +31,7 @@ const NavBar = () => {
         <Link to="resume" smooth={true} duration={1200}>
           <HStack cursor="pointer">
             <IoDocumentTextSharp size={30} />
-            <Text fontWeight="40" fontSize="xl">
+            <Text fontWeight="200" fontSize="xl">
               Resume
             </Text>
           </HStack>
@@ -39,7 +39,7 @@ const NavBar = () => {
         <Link to="portfolio" smooth={true} duration={1200}>
           <HStack cursor="pointer">
             <BsPersonWorkspace size={30} />
-            <Text fontWeight="40" fontSize="xl">
+            <Text fontWeight="200" fontSize="xl">
               Portfolio
             </Text>
           </HStack>
@@ -47,7 +47,7 @@ const NavBar = () => {
         <Link to="contact" smooth={true} duration={500}>
           <HStack cursor="pointer">
             <MdMail size={30} />
-            <Text fontWeight="40" fontSize="xl">
+            <Text fontWeight="200" fontSize="xl">
               Contact
             </Text>
           </HStack>

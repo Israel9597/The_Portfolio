@@ -18,13 +18,7 @@ const Portfolio = () => {
   const MotionBox = motion(Box);
 
   return (
-    <Container
-      maxW="100%"
-      className="portfolio"
-      bg="blackAlpha.900"
-      centerContent
-      pt="10"
-    >
+    <Container maxW="100%" className="portfolio" centerContent pt="10">
       <MotionBox
         className="flex items-center justify-center text-white w-[200px] h-[200px] rounded-full bg-black"
         animate={{ y: 20 }}
@@ -46,7 +40,7 @@ const Portfolio = () => {
         flexDirection={{ base: "column", lg: "row" }}
         justifyContent="space-evenly"
         alignItems="center"
-        width={{ base: "100%", lg: "65%" }}
+        width={{ base: "100%", lg: "80%" }}
       >
         {portfolioData.map((portfolio) => (
           <Box
@@ -58,11 +52,12 @@ const Portfolio = () => {
               <Card
                 overflow="hidden"
                 maxW="sm"
-                bgGradient="linear(to-r, black, purple.800)"
+                bg="blackAlpha.900"
                 sx={{
-                  boxShadow: "1px 1px 15px 5px rgba(29, 80, 157, 0.84)",
+                  boxShadow: "1px 1px 15px 5px rgba(65, 29, 157, 0.84)",
                 }}
                 h={{ lg: "630px" }}
+                color="whiteAlpha.900"
               >
                 {(portfolio.imageName == "The Game Hub" && (
                   <Link href="https://the-game-pjct.vercel.app/" isExternal>
