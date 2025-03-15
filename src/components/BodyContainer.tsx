@@ -8,7 +8,6 @@ import NavBar from "./NavBar";
 import ResponsiveNav from "./ResponsiveNav";
 
 import Contact from "./Contact";
-import React from "react";
 
 const BodyContainer = () => {
   const [showNav, setShowNav] = useState<boolean>();
