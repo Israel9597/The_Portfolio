@@ -1,0 +1,8 @@
+:root {
+  --hue-1-transparent: rgba(255, 0, 0, 0.986); /* Red */
+  --hue-2-transparent: rgba(0, 255, 21, 0.746); /* Green */
+  --hue-3-transparent: rgba(72, 0, 255, 0.793); /* Blue */
+  --hue-4-transparent: rgba(247, 230, 2, 0.764); /* Yellow */
+  --hue-5-transparent: rgba(175, 8, 246, 0.6); /* Magenta */
+  --hue-6-transparent: rgba(25, 206, 226, 0.798); /* Cyan */
+}

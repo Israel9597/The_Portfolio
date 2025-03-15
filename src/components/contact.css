@@ -1,0 +1,10 @@
+.form-size {
+  width: 50%;
+  margin-left: 5%;
+}
+
+@media (max-width: 768px) {
+  .form-size {
+    width: 100%;
+  }
+}

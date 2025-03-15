@@ -1,0 +1,11 @@
+.logo-slider-right {
+  animation: slideRight 50s linear infinite; /* Adjust animation duration as needed */
+  display: flex;
+  align-items: center;
+}
+
+@keyframes slideRight {
+  to {
+    transform: translateX(-40%);
+  }
+}
