@@ -78,7 +78,7 @@ const Contact = () => {
       <Flex
         direction={{ base: "column", lg: "row" }}
         w="100%"
-        h={{ base: "140vh", md: "90vh", lg: "60vh" }}
+        h={{ base: "140vh", md: "110vh", lg: "80vh" }}
         alignItems="center"
         mb="5%"
         color="white"

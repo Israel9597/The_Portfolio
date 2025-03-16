@@ -9,7 +9,6 @@ import {
   Flex,
   Link,
 } from "@chakra-ui/react";
-import * as anime from "motion/react-client";
 
 import { portfolioData } from "../data/portfolioData";
 import { motion } from "framer-motion";

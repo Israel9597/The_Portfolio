@@ -1,11 +1,4 @@
-import {
-  Box,
-  Container,
-  HStack,
-  Image,
-  Text,
-  useBreakpointValue,
-} from "@chakra-ui/react";
+import { Box, Container, HStack, Image, Text } from "@chakra-ui/react";
 
 import MyImage from "../assets/ppImage.jpg";
 
@@ -18,7 +11,7 @@ import { skillset } from "../data/skillsData";
 
 const Home = () => {
   const MotionBox = motion(Box);
-  const xValue = useBreakpointValue({ base: 5, md: 25, lg: 30 });
+
   return (
     <>
       <Container maxW="100%" centerContent>
