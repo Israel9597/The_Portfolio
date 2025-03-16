@@ -13,13 +13,7 @@ const NavBar = () => {
       animate={{ y: 10 }}
       transition={{ type: "spring", stiffness: 10 }}
     >
-      <HStack
-        justifyContent="flex-end"
-        spacing="80px"
-        p={5}
-        mr="150px"
-        color="white"
-      >
+      <HStack justifyContent="flex-end" spacing="80px" p={5} color="white">
         <Link to="home" smooth={true} duration={1200}>
           <HStack cursor="pointer">
             <IoIosHome size={30} />
