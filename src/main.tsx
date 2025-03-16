@@ -5,14 +5,6 @@ import "./index.css";
 import App from "./App.tsx";
 
 const theme = extendTheme({
-  styles: {
-    global: {
-      body: {
-        bg: "blackAlpha.900", // Set the default background color to black
-        color: "white", // Set the default text color to white
-      },
-    },
-  },
   fonts: {
     body: "Poppins, sans-serif", // Use Poppins for body text
     heading: "Poppins, sans-serif",

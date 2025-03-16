@@ -44,7 +44,7 @@ const BodyContainer = () => {
           position="sticky" // Make the navbar sticky
           top="1" // Stick to the top of the viewport
           zIndex="1"
-          h="80px"
+          h="50px"
           bg="black"
         >
           <NavBar />

@@ -48,7 +48,7 @@ const Contact = () => {
             isClosable: true,
           });
         })
-        .catch((e) => {
+        .catch(() => {
           toast({
             title: "Failed to send message.",
             description: "Please try again.",

@@ -34,7 +34,7 @@ const Home = () => {
           borderRadius="100%"
           overflow="hidden"
           boxShadow="1px 1px 25px 5px rgba(76, 29, 157, 0.84)"
-          mt="7"
+          mt="4"
           pt="8"
         >
           <Image src={MyImage} />
