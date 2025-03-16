@@ -18,7 +18,7 @@ const NavBar = () => {
         spacing="80px"
         p={5}
         mr="150px"
-        color="whiteAlpha"
+        color="white"
       >
         <Link to="home" smooth={true} duration={1200}>
           <HStack cursor="pointer">

@@ -24,6 +24,7 @@ const SkillSet = ({ skills }: Props) => {
       opacity="0.85"
       mb="-1%"
       height="150px"
+      color="white"
     >
       <Box className="parent" position="relative" width="200%">
         <Flex className="logo-slider-right" w="200%" p="1%">

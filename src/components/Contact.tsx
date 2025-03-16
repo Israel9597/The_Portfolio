@@ -80,11 +80,12 @@ const Contact = () => {
         h={{ base: "110vh", md: "90vh", lg: "60vh" }}
         alignItems="center"
         mb="5%"
+        color="white"
       >
         <form className="form-size" ref={form} onSubmit={handleSubmit}>
-          <Heading mb="8" mt="7%" fontSize={{ base: "20px", lg: "50px" }}>
+          <Text mb="8" mt="7%" fontSize={{ base: "20px", lg: "40px" }}>
             Message me
-          </Heading>
+          </Text>
           <FormControl>
             <FormLabel fontSize="20px">Name</FormLabel>
             <Input
@@ -121,7 +122,13 @@ const Contact = () => {
             />
             <Wrap mt="4">
               <WrapItem w="100%" justifyContent="flex-end">
-                <Button bg="blue.500" type="submit" size="md" w="20%">
+                <Button
+                  color="white"
+                  bg="blue.500"
+                  type="submit"
+                  size="md"
+                  w="20%"
+                >
                   Send
                 </Button>
               </WrapItem>
@@ -129,9 +136,9 @@ const Contact = () => {
           </FormControl>
         </form>
         <Box ml="10%" w="50%">
-          <Heading mb="8" fontSize={{ base: "25px", lg: "35px" }}>
+          <Text mb="8" fontSize={{ base: "25px", lg: "35px" }}>
             Contact me
-          </Heading>
+          </Text>
           <HStack mb="10">
             <MdPermPhoneMsg size={30} />
             <Text fontSize={{ base: "10px", lg: "18px" }}>+1(240)476-1905</Text>
