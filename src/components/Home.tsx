@@ -48,23 +48,19 @@ const Home = () => {
           w={{ base: "100%", md: "70%", lg: "60%" }}
           textAlign="center"
         >
-          <MotionBox
-            animate={{ x: xValue }}
-            transition={{ type: "spring", stiffness: 20 }}
-          >
-            <Text>Hi there,</Text>
-            <HStack>
-              <Text>I'm</Text>
-              <Text
-                bgGradient="linear(to-l,rgb(145, 231, 151),rgb(0, 200, 255))"
-                bgClip="text"
-                fontWeight="extrabold"
-                className="animatedText"
-              >
-                Israel Haile
-              </Text>
-            </HStack>
-          </MotionBox>
+          <Text>Hi there,</Text>
+          <HStack>
+            <Text>I'm</Text>
+            <Text
+              bgGradient="linear(to-l,rgb(145, 231, 151),rgb(0, 200, 255))"
+              bgClip="text"
+              fontWeight="extrabold"
+              className="animatedText"
+            >
+              Israel Haile
+            </Text>
+          </HStack>
+
           <AnimateCube />
 
           {/* Text Content */}

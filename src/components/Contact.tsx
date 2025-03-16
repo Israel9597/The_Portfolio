@@ -21,6 +21,7 @@ import { MdPermPhoneMsg } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { ImLocation } from "react-icons/im";
 import { IoLogoGithub } from "react-icons/io";
+import { MdEmail } from "react-icons/md";
 import "./contact.css";
 import { motion } from "framer-motion";
 
@@ -77,7 +78,7 @@ const Contact = () => {
       <Flex
         direction={{ base: "column", lg: "row" }}
         w="100%"
-        h={{ base: "110vh", md: "90vh", lg: "60vh" }}
+        h={{ base: "140vh", md: "90vh", lg: "60vh" }}
         alignItems="center"
         mb="5%"
         color="white"
@@ -89,8 +90,8 @@ const Contact = () => {
           <FormControl>
             <FormLabel fontSize="20px">Name</FormLabel>
             <Input
-              border="2px solid gray"
-              h="50px"
+              border="1px solid gray"
+              h={{ base: "40px", lg: "50px" }}
               type="text"
               name="user_name"
               required
@@ -101,22 +102,22 @@ const Contact = () => {
               Email
             </FormLabel>
             <Input
-              border="2px solid gray"
-              h="50px"
+              border="1px solid gray"
+              h={{ base: "40px", lg: "50px" }}
               type="email"
               name="user_email"
               required
               bg="gray.700"
               fontSize="2xl"
             />
-            <FormLabel fontSize="20px" mt="4">
+            <FormLabel fontSize="40px" mt="4">
               Message
             </FormLabel>
             <Textarea
-              border="2px solid gray"
+              border="1px solid gray"
               name="message"
               required
-              h="180px"
+              h={{ base: "100px", lg: "180px" }}
               bg="gray.700"
               fontSize="2xl"
             />
@@ -157,6 +158,13 @@ const Contact = () => {
             <Link href="https://github.com/Israel9597" isExternal>
               <Text fontSize={{ base: "10px", lg: "18px" }}>My Github</Text>
             </Link>
+          </HStack>
+          <HStack mb="10">
+            <MdEmail size={30} />
+
+            <Text fontSize={{ base: "10px", lg: "18px" }}>
+              israelbelete@gmail.com
+            </Text>
           </HStack>
           <HStack>
             <ImLocation size={30} />
