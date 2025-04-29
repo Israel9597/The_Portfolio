@@ -23,7 +23,7 @@ const SkillSet = ({ skills }: Props) => {
       bg="blackAlpha.600"
       opacity="0.85"
       mb="-1%"
-      height="150px"
+      height="100px"
       color="white"
     >
       <Box className="parent" position="relative" width="200%">
@@ -33,7 +33,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -53,7 +53,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -73,7 +73,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -93,7 +93,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -113,7 +113,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -133,7 +133,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -153,7 +153,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -173,7 +173,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -193,7 +193,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -213,7 +213,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -233,7 +233,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -253,7 +253,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -273,7 +273,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -293,7 +293,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -313,7 +313,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -333,7 +333,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -353,7 +353,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -373,7 +373,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -393,7 +393,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -413,7 +413,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -433,7 +433,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -453,7 +453,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -473,7 +473,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -493,7 +493,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -513,7 +513,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -533,7 +533,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -553,7 +553,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -573,7 +573,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -593,7 +593,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -613,7 +613,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -633,7 +633,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -653,7 +653,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -673,7 +673,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -693,7 +693,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -713,7 +713,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -733,7 +733,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -753,7 +753,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -773,7 +773,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -793,7 +793,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -813,7 +813,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -833,7 +833,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -853,7 +853,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -873,7 +873,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"
@@ -893,7 +893,7 @@ const SkillSet = ({ skills }: Props) => {
           {leftSkills.map((skill) => (
             <React.Fragment key={skill.id}>
               <Image
-                boxSize="60px"
+                boxSize="40px"
                 objectFit="cover"
                 src={skill.skill}
                 opacity="1"

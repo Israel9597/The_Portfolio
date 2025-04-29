@@ -25,7 +25,7 @@ const Portfolio = () => {
       >
         <Heading
           size="lg"
-          fontSize="70px"
+          fontSize="40px"
           mt="5"
           mb="10"
           bgGradient="linear(to-l, rgb(145, 231, 151),rgb(0, 200, 255))"
@@ -39,7 +39,7 @@ const Portfolio = () => {
         flexDirection={{ base: "column", lg: "row" }}
         justifyContent="space-evenly"
         alignItems="center"
-        width={{ base: "100%", lg: "90%" }}
+        width={{ base: "100%", lg: "80%" }}
       >
         {portfolioData.map((portfolio) => (
           <Box
@@ -49,12 +49,9 @@ const Portfolio = () => {
           >
             <Card
               overflow="hidden"
-              maxW="sm"
-              bg="blackAlpha.900"
-              sx={{
-                boxShadow: "1px 1px 15px 5px rgba(65, 29, 157, 0.84)",
-              }}
-              h={{ lg: "630px" }}
+              maxW="xs"
+              bg="gray.900"
+              h={{ lg: "530px" }}
               color="whiteAlpha.900"
             >
               {(portfolio.imageName == "The Game Hub" && (
@@ -81,7 +78,7 @@ const Portfolio = () => {
               <CardBody key={portfolio.id}>
                 {(portfolio.imageName == "The Game Hub" && (
                   <Link href="https://the-game-pjct.vercel.app/" isExternal>
-                    <Heading mb="2%" fontSize={{ base: "xl", lg: "2xl" }}>
+                    <Heading mb="2%" fontSize={{ base: "md", lg: "xl" }}>
                       {portfolio.imageName}
                     </Heading>
                   </Link>
@@ -92,7 +89,7 @@ const Portfolio = () => {
                       isExternal
                     >
                       {" "}
-                      <Heading mb="2%" fontSize={{ base: "xl", lg: "2xl" }}>
+                      <Heading mb="2%" fontSize={{ base: "md", lg: "xl" }}>
                         {portfolio.imageName}
                       </Heading>
                     </Link>
@@ -103,18 +100,18 @@ const Portfolio = () => {
                       isExternal
                     >
                       {" "}
-                      <Heading mb="2%" fontSize={{ base: "xl", lg: "2xl" }}>
+                      <Heading mb="2%" fontSize={{ base: "md", lg: "xl" }}>
                         {portfolio.imageName}
                       </Heading>
                     </Link>
                   ))}
-                <Text fontSize={{ base: "sm", lg: "md" }}>
+                <Text fontSize={{ base: "sm", lg: "sm" }}>
                   {portfolio.description}
                 </Text>
-                <Heading mb="2%" fontSize={{ base: "md", lg: "xl" }} mt="2%">
+                <Heading mb="2%" fontSize={{ base: "sm", lg: "md" }} mt="2%">
                   {portfolio.stackUsed}
                 </Heading>
-                <Text fontSize={{ base: "sm", lg: "md" }}>
+                <Text fontSize={{ base: "sm", lg: "sm" }}>
                   {portfolio.techStack}
                 </Text>
               </CardBody>

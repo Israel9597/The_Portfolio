@@ -1,8 +1,10 @@
 import {
   Box,
+  Button,
   Container,
   Flex,
   Heading,
+  Link,
   List,
   ListIcon,
   ListItem,
@@ -10,15 +12,19 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 import "./resume.css";
+import { FaFileDownload } from "react-icons/fa";
 import { MdCheckCircle } from "react-icons/md";
 import { motion } from "framer-motion";
+import resume from "../assets/ISRAEL  HAILE_RESUME  FULLSTACK.pdf";
 
 const Resume = () => {
   const MotionBox = motion(Box);
   const xValue = useBreakpointValue({ base: 18, md: "80", lg: 100 });
+  const fontSize = { base: "13px", md: "15", lg: "17px" };
+  const titleSize = "20px";
   return (
     <Container
-      maxW="100%"
+      maxW="95%"
       className="resume-container"
       boxShadow="dark-lg"
       centerContent
@@ -33,17 +39,37 @@ const Resume = () => {
           bgClip="text"
           fontWeight={{ base: "200", md: "400", lg: "600" }}
           className="animatedText"
-          fontSize="60px"
+          fontSize="40px"
         >
           Resume
         </Text>
       </MotionBox>
-
-      <Box>
-        <Flex
-          direction={{ base: "column", md: "row" }}
-          width={{ base: "100%", md: "100%", lg: "100%" }}
+      <Box w="85%">
+        <Heading size="lg" fontSize={titleSize} mt="8">
+          {" "}
+          Summary
+        </Heading>
+        <Text
+          fontSize={{
+            base: fontSize.base,
+            md: fontSize.md,
+            lg: fontSize.lg,
+          }}
+          mt="8"
         >
+          Motivated and experienced Full-Stack Web Developer with 4 years of
+          hands-on experience in designing and developing scalable, responsive
+          web applications using React, Node.js, and modern web technologies.
+          Proven ability to work in DevOps environments utilizing CI/CD
+          pipelines, agile development, test-driven development and learn
+          emerging technologies.Skilled at strong problem solving, working
+          independently, verbal communication and delivering innovative
+          solutions to meet business objectives.
+        </Text>
+      </Box>
+
+      <Box width={{ base: "100%", md: "100%", lg: "100%" }}>
+        <Flex direction={{ base: "column", md: "row" }}>
           <MotionBox
             animate={{ x: xValue }}
             transition={{ type: "spring", stiffness: 20 }}
@@ -52,127 +78,113 @@ const Resume = () => {
             pl={{ base: "3%", md: "2%" }} // Adjust padding for mobile
             pr={{ base: "3%" }}
           >
-            <Heading size="lg" fontSize="30px" mt="8">
-              {" "}
-              Summary
-            </Heading>
-
-            <Text fontSize="21px" mt="8">
-              Motivated and experienced Full-Stack Web Developer with 4 years of
-              hands-on experience in designing and developing scalable,
-              responsive web applications using React, Node.js, and modern web
-              technologies. Proven ability to work in DevOps environments
-              utilizing CI/CD pipelines, agile development, test-driven
-              development and learn emerging technologies.Skilled at strong
-              problem solving, working independently, verbal communication and
-              delivering innovative solutions to meet business objectives.
-            </Text>
-            <Heading size="lg" fontSize="30px" mt="8">
+            <Heading fontSize={titleSize} mt="8" alignItems="center">
               Professional Experience
             </Heading>
-
-            <Heading size="lg" fontSize="25px" mt="4">
-              IT support
+            <Heading
+              size="lg"
+              fontSize="19px
+            "
+              mt="10"
+            >
+              IT Support & Frontend Developer
             </Heading>
-
-            <Text fontSize="25px">Gihon Tech (2024-present)</Text>
+            <Text
+              fontSize="19px
+            "
+            >
+              Gihon Tech (2024 - present)
+            </Text>
 
             <List spacing={3}>
               <ListItem
-                fontSize={{ base: "18px", md: "19", lg: "21px" }}
-                mt="8"
+                fontSize={{
+                  base: fontSize.base,
+                  md: fontSize.md,
+                  lg: fontSize.lg,
+                }}
+                mt="4"
               >
                 <ListIcon as={MdCheckCircle} color="purple.500" />
-                Leading, maintaining, and developing a startup company's website
-                using modern web application development tools and technologies
-                to deliver a seamless, scalable, and user-friendly digital
-                experience
+                Led website development and maintenance for a startup using
+                modern tools, achieving a 40% load speed improvement and a 30%
+                increase in user engagement through an enhanced digital
+                experience.
               </ListItem>
               <ListItem
-                fontSize={{ base: "18px", md: "19px", lg: "21px" }}
+                fontSize={{
+                  base: fontSize.base,
+                  md: fontSize.md,
+                  lg: fontSize.lg,
+                }}
                 mt="8"
               >
                 <ListIcon as={MdCheckCircle} color="purple.500" />
-                Collaborating with design teams and stakeholders to review UX
-                designs, coordinating with backend teams to evaluate API
-                documentation, ensuring seamless integration and optimal
-                performance, and selecting robust libraries to enhance
-                scalability and performance.
-              </ListItem>
-              <ListItem
-                fontSize={{ base: "18px", md: "19px", lg: "21px" }}
-                mt="8"
-              >
-                <ListIcon as={MdCheckCircle} color="purple.500" />
-                Managing the daily routines of the Software Development Life
-                Cycle (SDLC) to ensure the timely and high-quality delivery of
-                websites, while maintaining a focus on efficiency,
-                collaboration, and continuous improvement.
-              </ListItem>
-              <ListItem
-                fontSize={{ base: "18px", md: "19px", lg: "21px" }}
-                mt="8"
-              >
-                <ListIcon as={MdCheckCircle} color="purple.500" />
-                Implemented Continuous Integration and Continuous Deployment
-                (CI/CD) pipelines, collaborating closely with the DevOps team to
-                ensure timely and efficient delivery of software updates and
-                improvements.
-              </ListItem>
-              <ListItem
-                fontSize={{ base: "18px", md: "19px", lg: "21px" }}
-                mt="8"
-              >
-                <ListIcon as={MdCheckCircle} color="purple.500" />
-                Debugging , troubleshooting and improving performance of
-                applications for better user experience.
+                Manage the daily Software Development Life Cycle (SDLC)
+                operations, streamlining workflows and improving project
+                delivery timelines by 25%, ensuring high-quality releases with
+                minimal downtime
               </ListItem>
             </List>
-
-            <Heading size="lg" fontSize="25px" mt="8">
-              IT Analyst
+            <Heading
+              size="lg"
+              fontSize="19px
+            "
+              mt="8"
+            >
+              Frontend Developer
             </Heading>
-            <Text fontSize="25px">
+            <Text
+              fontSize="19px
+            "
+            >
               Tata Consultancy Services ( 2022 - 2024 )
             </Text>
             <List spacing={3}>
               <ListItem
-                fontSize={{ base: "18px", md: "19px", lg: "21px" }}
+                fontSize={{
+                  base: fontSize.base,
+                  md: fontSize.md,
+                  lg: fontSize.lg,
+                }}
                 mt="8"
               >
                 <ListIcon as={MdCheckCircle} color="purple.500" />
-                Developed and maintained enterprise-level responsive web
-                applications using React.js and TypeScript, improving use
-                engagement by 20% and ensuring consistency and highly performing
-                application in all devices.
+                Developed and maintained enterprise-level responsive Agent web
+                portal and Customer web portal for end client Metlife Insurance
+                LATAM project, improved user engagement by 30%.
               </ListItem>
               <ListItem
-                fontSize={{ base: "18px", md: "19px", lg: "21px" }}
+                fontSize={{
+                  base: fontSize.base,
+                  md: fontSize.md,
+                  lg: fontSize.lg,
+                }}
                 mt="8"
               >
                 <ListIcon as={MdCheckCircle} color="purple.500" />
-                Implemented new libraries React query/ Tanstack for data
-                fetching, lazy loading(infinite loading), caching , pagination
-                which optimize performance with 30%.
+                Developed and maintained enterprise-level responsive
+                self-service applications for end client Unfi Foods.
               </ListItem>
               <ListItem
-                fontSize={{ base: "18px", md: "19px", lg: "21px" }}
+                fontSize={{
+                  base: fontSize.base,
+                  md: fontSize.md,
+                  lg: fontSize.lg,
+                }}
                 mt="8"
               >
                 <ListIcon as={MdCheckCircle} color="purple.500" />
-                Implemented CI/CD pipelines using GitLab and Azure DevOps,
-                reducing deployment time by 25%.
+                Implemented libraries React query/Tanstack for data fetching,
+                lazy loading(infinite loading), caching , pagination which
+                optimize performance with 25%.
               </ListItem>
               <ListItem
-                fontSize={{ base: "18px", md: "19px", lg: "21px" }}
-                mt="8"
-              >
-                <ListIcon as={MdCheckCircle} color="purple.500" />
-                Debugging , troubleshooting and improving performance of
-                applications for better user experience.
-              </ListItem>
-              <ListItem
-                fontSize={{ base: "18px", md: "19px", lg: "21px" }}
+                fontSize={{
+                  base: fontSize.base,
+                  md: fontSize.md,
+                  lg: fontSize.lg,
+                }}
                 mt="8"
               >
                 <ListIcon as={MdCheckCircle} color="purple.500" />
@@ -180,47 +192,17 @@ const Resume = () => {
                 submission of forms.
               </ListItem>
               <ListItem
-                fontSize={{ base: "18px", md: "19px", lg: "21px" }}
+                fontSize={{
+                  base: fontSize.base,
+                  md: fontSize.md,
+                  lg: fontSize.lg,
+                }}
                 mt="8"
               >
                 <ListIcon as={MdCheckCircle} color="purple.500" />
-                Write quality code with best standards and follow best practices
-                on structure and maintainability as per the business standards.
-              </ListItem>
-              <ListItem
-                fontSize={{ base: "18px", md: "19px", lg: "21px" }}
-                mt="8"
-              >
-                <ListIcon as={MdCheckCircle} color="purple.500" />
-                Collaborate with the design team, business analyst team, quality
-                assurance team,back-end team, product owner to achieve the
-                project goal.
-              </ListItem>
-            </List>
-            <Heading size="lg" fontSize="25px" mt="4">
-              Assistant Instructor
-            </Heading>
-            <Text fontSize="25px">
-              Evangadi Networks BootCamp ( 2022 - 2024 )
-            </Text>
-            <List spacing={3}>
-              <ListItem
-                fontSize={{ base: "18px", md: "19px", lg: "21px" }}
-                mt="2"
-              >
-                <ListIcon as={MdCheckCircle} color="purple.500" />
-                Taught full-stack development courses covering HTML, CSS,
-                JavaScript, React, Node.js, Express, and SQL.
-              </ListItem>
-            </List>
-            <List spacing={3}>
-              <ListItem
-                fontSize={{ base: "18px", md: "19px", lg: "21px" }}
-                mb="6"
-              >
-                <ListIcon as={MdCheckCircle} color="purple.500" />
-                Mentored students and assisted with project implementations and
-                code reviews.
+                Collaborated with the design team, business analyst team,
+                quality assurance team, and back-end team to achieve the project
+                goal.
               </ListItem>
             </List>
           </MotionBox>
@@ -233,14 +215,69 @@ const Resume = () => {
             pr={{ base: "4%", md: "0" }}
             mb={{ base: "5%" }}
           >
-            <Heading size="lg" fontSize="25px" mt="10%">
-              Full-Stack Web Developer (Internship)(2019 - 2022)
+            <Heading
+              size="lg"
+              fontSize="19px
+            "
+              mt="4"
+            >
+              Assistant Instructor
             </Heading>
-            <Text fontSize="25px">Ashewa Technologies SC</Text>
+            <Text
+              fontSize="19px
+            "
+            >
+              Evangadi Networks BootCamp ( 2022 - 2024 )
+            </Text>
             <List spacing={3}>
               <ListItem
-                fontSize={{ base: "18px", md: "19px", lg: "21px" }}
-                mt="8"
+                fontSize={{
+                  base: fontSize.base,
+                  md: fontSize.md,
+                  lg: fontSize.lg,
+                }}
+                mt="2"
+              >
+                <ListIcon as={MdCheckCircle} color="purple.500" />
+                Taught full-stack development courses covering HTML, CSS,
+                JavaScript, React, Node.js, Express, and SQL.
+              </ListItem>
+            </List>
+            <List spacing={3}>
+              <ListItem
+                fontSize={{
+                  base: fontSize.base,
+                  md: fontSize.md,
+                  lg: fontSize.lg,
+                }}
+                mb="6"
+              >
+                <ListIcon as={MdCheckCircle} color="purple.500" />
+                Mentored students and assisted with project implementations and
+                code reviews.
+              </ListItem>
+            </List>
+            <Heading
+              size="lg"
+              fontSize="19px
+            "
+            >
+              Full-Stack Web Developer (Internship)
+            </Heading>
+            <Text
+              fontSize="19px
+            "
+            >
+              Ashewa Technologies SC (2019 - 2022)
+            </Text>
+            <List spacing={3}>
+              <ListItem
+                fontSize={{
+                  base: fontSize.base,
+                  md: fontSize.md,
+                  lg: fontSize.lg,
+                }}
+                mt="3"
               >
                 <ListIcon as={MdCheckCircle} color="purple.500" />
                 Built responsive and dynamic user interfaces with CSS3, Material
@@ -249,7 +286,11 @@ const Resume = () => {
             </List>
             <List spacing={3}>
               <ListItem
-                fontSize={{ base: "18px", md: "19px", lg: "21px" }}
+                fontSize={{
+                  base: fontSize.base,
+                  md: fontSize.md,
+                  lg: fontSize.lg,
+                }}
                 mt="4"
               >
                 <ListIcon as={MdCheckCircle} color="purple.500" />
@@ -257,29 +298,35 @@ const Resume = () => {
                 test applications.
               </ListItem>
             </List>
-            <List spacing={3}>
-              <ListItem
-                fontSize={{ base: "18px", md: "19px", lg: "21px" }}
-                mt="4"
-              >
-                <ListIcon as={MdCheckCircle} color="purple.500" />
-                Integrated MongoDB databases and RESTful APIs for data
-                management.
-              </ListItem>
-            </List>
 
-            <Heading size="lg" fontSize="25px" mt="8">
+            <Heading
+              size="lg"
+              fontSize="19px
+            "
+              mt="8"
+            >
               {" "}
               Education
             </Heading>
 
-            <Text fontSize={{ base: "18px", md: "19px", lg: "21px" }} mt="8">
+            <Text
+              fontSize={{
+                base: fontSize.base,
+                md: fontSize.md,
+                lg: fontSize.lg,
+              }}
+              mt="8"
+            >
               Maharishi International University
             </Text>
 
             <List spacing={3}>
               <ListItem
-                fontSize={{ base: "18px", md: "19px", lg: "21px" }}
+                fontSize={{
+                  base: fontSize.base,
+                  md: fontSize.md,
+                  lg: fontSize.lg,
+                }}
                 mt="2"
               >
                 <ListIcon as={MdCheckCircle} color="purple.500" />
@@ -287,22 +334,44 @@ const Resume = () => {
               </ListItem>
             </List>
 
-            <Text fontSize={{ base: "18px", md: "19px", lg: "21px" }} mt="5">
+            <Text
+              fontSize={{
+                base: fontSize.base,
+                md: fontSize.md,
+                lg: fontSize.lg,
+              }}
+              mt="5"
+            >
               University of Gondar
             </Text>
             <List spacing={3}>
-              <ListItem fontSize={{ base: "18px", md: "19px", lg: "21px" }}>
+              <ListItem
+                fontSize={{
+                  base: fontSize.base,
+                  md: fontSize.md,
+                  lg: fontSize.lg,
+                }}
+              >
                 <ListIcon as={MdCheckCircle} color="purple.500" />
                 Bachelor of Arts in Accounting
               </ListItem>
             </List>
 
-            <Heading size="lg" fontSize="25px" mt="8">
+            <Heading
+              size="lg"
+              fontSize="19px
+            "
+              mt="8"
+            >
               Technical Projects
             </Heading>
             <List spacing={3}>
               <ListItem
-                fontSize={{ base: "18px", md: "19px", lg: "21px" }}
+                fontSize={{
+                  base: fontSize.base,
+                  md: fontSize.md,
+                  lg: fontSize.lg,
+                }}
                 mt="6"
               >
                 <ListIcon as={MdCheckCircle} color="purple.500" />
@@ -311,7 +380,11 @@ const Resume = () => {
             </List>
             <List spacing={3}>
               <ListItem
-                fontSize={{ base: "18px", md: "19px", lg: "21px" }}
+                fontSize={{
+                  base: fontSize.base,
+                  md: fontSize.md,
+                  lg: fontSize.lg,
+                }}
                 mt="2"
               >
                 <ListIcon as={MdCheckCircle} color="purple.500" />
@@ -320,13 +393,25 @@ const Resume = () => {
             </List>
             <List spacing={3}>
               <ListItem
-                fontSize={{ base: "18px", md: "19px", lg: "21px" }}
+                fontSize={{
+                  base: fontSize.base,
+                  md: fontSize.md,
+                  lg: fontSize.lg,
+                }}
                 mt="2"
               >
                 <ListIcon as={MdCheckCircle} color="purple.500" />
                 Customer Web Portal (MetLife Insurance)
               </ListItem>
             </List>
+            <Box mt="10" color="purple.500">
+              <Link href={resume} download={resume} isExternal>
+                <Flex>
+                  <FaFileDownload />
+                  <Box ml="3">Download Resume </Box>
+                </Flex>
+              </Link>
+            </Box>
           </MotionBox>
         </Flex>
       </Box>

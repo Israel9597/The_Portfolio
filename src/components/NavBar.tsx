@@ -16,32 +16,32 @@ const NavBar = () => {
       <HStack justifyContent="flex-end" spacing="80px" p={5} color="white">
         <Link to="home" smooth={true} duration={1200}>
           <HStack cursor="pointer">
-            <IoIosHome size={30} />
-            <Text fontWeight="200" fontSize="xl">
+            <IoIosHome size={20} />
+            <Text fontWeight="200" fontSize="md">
               Home
             </Text>
           </HStack>
         </Link>
         <Link to="resume" smooth={true} duration={1200}>
           <HStack cursor="pointer">
-            <IoDocumentTextSharp size={30} />
-            <Text fontWeight="200" fontSize="xl">
+            <IoDocumentTextSharp size={20} />
+            <Text fontWeight="200" fontSize="md">
               Resume
             </Text>
           </HStack>
         </Link>
         <Link to="portfolio" smooth={true} duration={1200}>
           <HStack cursor="pointer">
-            <BsPersonWorkspace size={30} />
-            <Text fontWeight="200" fontSize="xl">
+            <BsPersonWorkspace size={20} />
+            <Text fontWeight="200" fontSize="md">
               Portfolio
             </Text>
           </HStack>
         </Link>
         <Link to="contact" smooth={true} duration={500}>
           <HStack cursor="pointer">
-            <MdMail size={30} />
-            <Text fontWeight="200" fontSize="xl">
+            <MdMail size={20} />
+            <Text fontWeight="200" fontSize="md">
               Contact
             </Text>
           </HStack>

@@ -35,8 +35,8 @@ const Home = () => {
 
         <Box
           color="whiteAlpha.800"
-          fontSize={{ base: "25px", md: "30px", lg: "50px" }}
-          fontWeight={{ base: "700", md: "400", lg: "600" }}
+          fontSize={{ base: "25px", md: "20px", lg: "40px" }}
+          fontWeight={{ base: "600", md: "400", lg: "500" }}
           placeItems="center"
           w={{ base: "100%", md: "70%", lg: "60%" }}
           textAlign="center"
@@ -59,7 +59,7 @@ const Home = () => {
           {/* Text Content */}
           <Text
             fontWeight={{ base: "400", md: "300", lg: "400" }}
-            fontSize={{ base: "14px", md: "14px", lg: "25px" }}
+            fontSize={{ base: "14px", md: "14px", lg: "17px" }}
             textAlign="center"
             width={{ base: "100%", md: "80%", lg: "80%" }}
             className="description"

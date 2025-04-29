@@ -61,14 +61,14 @@ const Contact = () => {
   };
 
   return (
-    <Container maxW="100%" centerContent>
+    <Container maxW="80%" centerContent>
       <MotionBox
         className="flex items-center justify-center text-white w-[200px] h-[200px] rounded-full bg-black"
         animate={{ y: 20 }}
         transition={{ type: "spring", stiffness: 10 }}
       >
         <Heading
-          fontSize={{ base: "40px", lg: "60px" }}
+          fontSize={{ base: "20px", lg: "40px" }}
           bgGradient="linear(to-l, rgb(145, 231, 151),rgb(0, 200, 255))"
           bgClip="text"
         >
@@ -84,34 +84,31 @@ const Contact = () => {
         color="white"
       >
         <form className="form-size" ref={form} onSubmit={handleSubmit}>
-          <Text mb="8" mt="7%" fontSize={{ base: "20px", lg: "40px" }}>
-            Message me
-          </Text>
           <FormControl>
-            <FormLabel fontSize="20px">Name</FormLabel>
+            <FormLabel fontSize="15px">Name</FormLabel>
             <Input
               border="1px solid gray"
-              h={{ base: "40px", lg: "50px" }}
+              h={{ base: "35px", lg: "35px" }}
               type="text"
               name="user_name"
               required
               bg="gray.700"
-              fontSize="2xl"
+              fontSize="sm"
             />
-            <FormLabel fontSize="20px" mt="4">
+            <FormLabel fontSize="15px" mt="4">
               Email
             </FormLabel>
             <Input
               border="1px solid gray"
-              h={{ base: "40px", lg: "50px" }}
+              h={{ base: "35px", lg: "35px" }}
               type="email"
               name="user_email"
               required
               bg="gray.700"
-              fontSize="2xl"
+              fontSize="sm"
             />
-            <FormLabel fontSize="40px" mt="4">
-              Message
+            <FormLabel fontSize="15px" mt="4">
+              Description
             </FormLabel>
             <Textarea
               border="1px solid gray"
@@ -119,7 +116,7 @@ const Contact = () => {
               required
               h={{ base: "100px", lg: "180px" }}
               bg="gray.700"
-              fontSize="2xl"
+              fontSize="sm"
             />
             <Wrap mt="4">
               <WrapItem w="100%" justifyContent="flex-end">
@@ -127,8 +124,9 @@ const Contact = () => {
                   color="white"
                   bg="blue.500"
                   type="submit"
-                  size="md"
-                  w="20%"
+                  h="30px"
+                  w={{ base: "100%", lg: "20%" }}
+                  mb="10%"
                 >
                   Send
                 </Button>
@@ -137,39 +135,36 @@ const Contact = () => {
           </FormControl>
         </form>
         <Box ml="10%" w="50%">
-          <Text mb="8" fontSize={{ base: "25px", lg: "35px" }}>
-            Contact me
-          </Text>
           <HStack mb="10">
-            <MdPermPhoneMsg size={30} />
-            <Text fontSize={{ base: "10px", lg: "18px" }}>+1(240)476-1905</Text>
+            <MdPermPhoneMsg size={20} />
+            <Text fontSize={{ base: "10px", lg: "15px" }}>+1(240)476-1905</Text>
           </HStack>
           <HStack mb="10">
-            <FaLinkedin size={30} />
+            <FaLinkedin size={20} />
             <Link
               href="https://www.linkedin.com/in/israel-haile-81580595/"
               isExternal
             >
-              <Text fontSize={{ base: "10px", lg: "18px" }}>Israel Haile</Text>
+              <Text fontSize={{ base: "10px", lg: "15px" }}>Israel Haile</Text>
             </Link>
           </HStack>
           <HStack mb="10">
-            <IoLogoGithub size={30} />
+            <IoLogoGithub size={20} />
             <Link href="https://github.com/Israel9597" isExternal>
-              <Text fontSize={{ base: "10px", lg: "18px" }}>My Github</Text>
+              <Text fontSize={{ base: "10px", lg: "15px" }}>My Github</Text>
             </Link>
           </HStack>
           <HStack mb="10">
-            <MdEmail size={30} />
+            <MdEmail size={20} />
 
-            <Text fontSize={{ base: "10px", lg: "18px" }}>
+            <Text fontSize={{ base: "8px", lg: "15px" }}>
               israelbelete@gmail.com
             </Text>
           </HStack>
           <HStack>
-            <ImLocation size={30} />
+            <ImLocation size={20} />
 
-            <Text fontSize={{ base: "10px", lg: "18px" }}>
+            <Text fontSize={{ base: "10px", lg: "15px" }}>
               Silver Spring, MD
             </Text>
           </HStack>
